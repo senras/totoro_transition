@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.loader {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+  left: -100%;
+  transition: all 0.9s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page1,
+.page2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color: rgb(177, 246, 255);
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: white;
+    a {
+      font-size: 30px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.page2 {
+  background-color: rgb(248, 177, 255);
+  display: none;
+  h1 {
+    color: rgb(29, 29, 29);
+  }
+}
